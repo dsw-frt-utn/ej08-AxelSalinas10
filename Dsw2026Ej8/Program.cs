@@ -1,10 +1,3 @@
-﻿namespace Dsw2026Ej8
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
-}
+﻿using Dsw2026Ej8.Problema1;
+
+Console.WriteLine(ProductHelper.ObtenerEtiquetaProducto(123, "Teclado", 1500));
