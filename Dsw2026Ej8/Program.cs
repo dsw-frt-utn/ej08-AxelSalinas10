@@ -3,6 +3,7 @@ using Dsw2026Ej8.Problema2;
 using Dsw2026Ej8.Problema3;
 using Dsw2026Ej8.Problema4;
 using Dsw2026Ej8.Problema5;
+using Dsw2026Ej8.Problema6;
 Console.WriteLine(ProductHelper.ObtenerEtiquetaProducto(123, "Teclado", 1500));
 var p2 = new Problema2();
 Console.WriteLine(p2.CrearResumenVenta(1, "Mouse", 2, 100));
@@ -29,3 +30,7 @@ Sale wholesale = new WholesaleSale { Amount = 1000 };
 
 Console.WriteLine(p5.ObtenerImporteFinal(retail));     // 1000
 Console.WriteLine(p5.ObtenerImporteFinal(wholesale));  // 900
+var p6 = new Problema6();
+
+Console.WriteLine(p6.NormalizarCodigoProducto(" ab 123 x "));
+Console.WriteLine(p6.NormalizarCodigoProducto(null));
